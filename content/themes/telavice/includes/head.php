@@ -1,9 +1,9 @@
 <?php
 
+/** Constants */
+require_once(  get_template_directory() . '/includes/config.php');
+
 /** functions for to include in the head section of the code  */
-
-define("THEME_DIR", get_template_directory_uri());
-
 /*--- REMOVE GENERATOR META TAG ---*/
 remove_action('wp_head', 'wp_generator');
 
