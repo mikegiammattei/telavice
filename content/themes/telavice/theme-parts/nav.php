@@ -1,8 +1,9 @@
-<header>
-	<nav>
-		<ul>
-			<li class="btn btn-primary">about</li>
-		</ul>
-	</nav>
 
-</header>
+<nav>
+    <?php
+    wp_nav_menu( array(
+        'theme_location' => 'Header menu',
+        'menu_class'     => 'primary-menu',
+    ) );
+    ?>
+</nav>

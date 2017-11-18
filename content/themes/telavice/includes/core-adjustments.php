@@ -43,3 +43,9 @@ function remove_head_scripts() {
 	add_action('wp_footer', 'wp_print_head_scripts', 5);
 }
 add_action( 'wp_enqueue_scripts', 'remove_head_scripts' );
+
+/** Adds the menu option to the admin bar */
+register_nav_menus( array(
+	'header' => 'Header menu',
+	'footer' => 'Footer menu'
+) );

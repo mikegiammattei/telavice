@@ -1,3 +1,28 @@
 header{
-  background-color: $brand-primary;
+  .logo{
+    font-weight: bolder;
+    font-size: 32px;
+    color:#ffffff;
+    cursor: pointer;
+
+    .icon{
+      left: 4px;
+      top: -1px;
+      padding: 0px 7px;
+      background: #3FB038;
+      border-radius: 4px;
+
+    }
+    .heading{
+      padding: 6px 0;
+      display: inline-block;
+    }
+  }
+  .action{
+    .btn{
+      &.green{
+        margin-top: 15px;
+      }
+    }
+  }
 }
