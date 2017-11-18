@@ -16,14 +16,32 @@
     <link rel="alternate" type="application/rss+xml" title="<?php bloginfo('name'); ?> RSS2 Feed" href="<?php bloginfo('rss2_url'); ?>" />
     <link rel="pingback" href="<?php bloginfo('pingback_url'); ?>" />
 
-    <title><?php wp_title(); ?> - <?php bloginfo( 'name' ); ?></title>
+    <title><?php echo (wp_title()) ? : 'Local Online Doctor Visits'; ?> - <?php bloginfo( 'name' ); ?></title>
+    <meta name="description" content="<?php bloginfo('description'); ?>" />
 	<?php wp_head(); ?>
 </head>
 <body <?php body_class(); ?>>
 
 <header>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-3">
+                <div class="logo">
+                    <span class="heading"><i class="fa fa-plus-square" aria-hidden="true"></i> Telavice</span>
+                </div>
+            </div>
+            <div class="col-md-7">
+	            <?php /** Pull's in the navigation */ ?>
+	            <?php require_once( THEME_DIR . '/theme-parts/nav.php' ); ?>
+            </div>
+            <div class="col-md-2 action">
+                <button type="button" id="start-visit-btn" class="btn btn-outline-secondary green">Start Online Visit</button>
+            </div>
+        </div>
+    </div>
     <?php /** Pull's in the navigation */ ?>
     <?php require_once( THEME_DIR . '/theme-parts/nav.php' ); ?>
 </header>
+
 
 

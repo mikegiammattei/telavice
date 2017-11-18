@@ -1,0 +1,22 @@
+nav{
+  ul{
+    margin-bottom: 0;
+    margin-top: 4px;
+
+    li{
+      display: inline-block;
+      list-style: none;
+      a{
+        color:$text-white;
+        text-decoration: none;
+        padding: 15px;
+        display: inline-block;
+
+        &:hover{
+          color:$text-white;
+          text-decoration: none;
+        }
+      }
+    }
+  }
+}

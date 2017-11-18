@@ -1,4 +1,4 @@
-/*
+/*!
 Theme Name: Telavice
 Author: Michael Giammattei - Website Company
 Author URI: http://website-company.com/
@@ -9,9 +9,11 @@ License URI: http://www.gnu.org/licenses/gpl-2.0.html
 Text Domain: Telavice
 */
 
-@import "../../../../../node_modules/bootstrap-sass/assets/stylesheets/bootstrap";
+@import "../../../../../node_modules/bootstrap/scss/bootstrap";
+@import "../../../../../bower_components/components-font-awesome/scss/font-awesome";
 @import "variables";
 @import "core";
 @import "header";
 @import "nav";
-@import "nav";
+@import "footer";
+@import "home";

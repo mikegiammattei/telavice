@@ -4,10 +4,13 @@
   "description": "",
   "main": "Gruntfile.js",
   "dependencies": {
+    "bootstrap": "^4.0.0-alpha.6",
     "bootstrap-sass": "^3.3.7",
+    "font-awesome": "^4.7.0",
     "grunt": "^1.0.1",
     "grunt-contrib-sass": "^1.0.0",
-    "grunt-contrib-watch": "^1.0.0"
+    "grunt-contrib-watch": "^1.0.0",
+    "react-fontawesome": "^1.6.1"
   },
   "devDependencies": {},
   "scripts": {
