@@ -18,6 +18,12 @@
 
     <title><?php wp_title(); ?> - <?php bloginfo( 'name' ); ?></title>
 	<?php wp_head(); ?>
-
 </head>
 <body <?php body_class(); ?>>
+
+<header>
+    <?php /** Pull's in the navigation */ ?>
+    <?php require_once( THEME_DIR . '/theme-parts/nav.php' ); ?>
+</header>
+
+
