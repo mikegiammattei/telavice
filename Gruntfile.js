@@ -24,7 +24,7 @@ module.exports = function(grunt){
             },*/
             sass: {
                 files: [
-                    'content/themes/wc-blank/scss/**',
+                    'content/themes/telavice/scss/**',
                 ],
                 tasks: ['sass']
             }

@@ -1,3 +1,10 @@
-<header class="navbar navbar-light navbar-toggleable-md bd-navbar">
+<?php get_header(); ?>
+
+<header>
+    <nav>
+        <ul>
+            <li class="btn btn-primary">about</li>
+        </ul>
+    </nav>
 
 </header>
