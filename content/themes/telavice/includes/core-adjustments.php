@@ -28,8 +28,6 @@ function remove_json_api () {
 	// Remove oEmbed-specific JavaScript from the front-end and back-end.
 	remove_action( 'wp_head', 'wp_oembed_add_host_js' );
 
-	// Remove all embeds rewrite rules.
-	add_filter( 'rewrite_rules_array', 'disable_embeds_rewrites' );
 
 }
 add_action( 'after_setup_theme', 'remove_json_api' );
