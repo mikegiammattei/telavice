@@ -8,7 +8,7 @@ module.exports = function(grunt){
                 },
                 files: [{
                     expand: true,
-                    cwd: 'content/themes/telavice/scss',
+                    cwd: 'content/themes/telavice/assets/scss',
                     src: [
                         'style.scss'
                     ],
@@ -24,7 +24,7 @@ module.exports = function(grunt){
             },*/
             sass: {
                 files: [
-                    'content/themes/telavice/scss/**',
+                    'content/themes/telavice/assets/scss/**',
                 ],
                 tasks: ['sass']
             }
