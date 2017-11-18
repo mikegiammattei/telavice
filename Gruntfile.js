@@ -8,11 +8,11 @@ module.exports = function(grunt){
                 },
                 files: [{
                     expand: true,
-                    cwd: 'content/themes/wc-blank/scss',
+                    cwd: 'content/themes/telavice/scss',
                     src: [
                         'style.scss'
                     ],
-                    dest: 'content/themes/wc-blank/',
+                    dest: 'content/themes/telavice/',
                     ext: '.css'
                 }]
             }
