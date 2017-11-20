@@ -24,24 +24,24 @@
 
 <header>
     <div class="container">
-        <div class="row">
-            <div class="col-md-3">
-                <div class="logo">
-                    <span class="heading"><i class="fa fa-plus-square" aria-hidden="true"></i> Telavice</span>
-                </div>
+        <div class="group">
+            <div class="logo">
+                <span class="heading"><i class="fa fa-plus-square" aria-hidden="true"></i> Telavice</span>
             </div>
-            <div class="col-md-7">
-	            <?php /** Pull's in the navigation */ ?>
-	            <?php require_once( THEME_DIR . '/theme-parts/nav.php' ); ?>
-            </div>
-            <div class="col-md-2 action">
-                <button type="button" id="start-visit-btn" class="btn btn-outline-secondary green">Start Online Visit</button>
+            <div class="navigation">
+		        <?php /** Pull's in the navigation */ ?>
+		        <?php require_once( THEME_DIR . '/theme-parts/nav.php' ); ?>
             </div>
         </div>
+        <div class="action">
+            <button type="button" id="start-visit-btn" class="btn btn-outline-secondary green">Start Online Visit</button>
+        </div>
     </div>
+
     <?php /** Pull's in the navigation */ ?>
     <?php require_once( THEME_DIR . '/theme-parts/nav.php' ); ?>
 </header>
+<div class="clearfix"></div>
 
 
 

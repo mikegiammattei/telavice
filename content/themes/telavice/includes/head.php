@@ -14,7 +14,7 @@ function enqueue_scripts() {
 	/** Adds the theme's style sheet head */
 	wp_enqueue_style( 'style', get_stylesheet_uri() );
 	/** REGISTER the site's main.js **/
-	wp_register_script( 'main-script', THEME_DIR_URL . '/js/main.js', array( 'jquery' ), '1', true );
+	wp_register_script( 'main-script', THEME_DIR_URL . '/assets/js/main.js', array( 'jquery' ), '1', true );
 	wp_enqueue_script( 'main-script' );
 
 }

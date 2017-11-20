@@ -1,26 +1,46 @@
 header{
-  .logo{
-    font-weight: bolder;
-    font-size: 32px;
-    color:#ffffff;
-    cursor: pointer;
-
-    .icon{
-      left: 4px;
-      top: -1px;
-      padding: 0px 7px;
-      background: #3FB038;
-      border-radius: 4px;
-
+  clear: both;
+  .group{
+    width: 82%;
+    float: left;
+    @media (max-width: 880px) {
+      width: 70%;
     }
-    .heading{
-      padding: 6px 0;
-      display: inline-block;
+    .logo {
+      float: left;
+      font-weight: bolder;
+      font-size: 32px;
+      color: #ffffff;
+      cursor: pointer;
+
+      .icon {
+        left: 4px;
+        top: -1px;
+        padding: 0px 7px;
+        background: #3FB038;
+        border-radius: 4px;
+
+      }
+      .heading {
+        padding: 6px 0;
+        display: inline-block;
+      }
+    }
+    .navigation{
+      float: left;
     }
   }
-  .action{
-    .btn{
-      &.green{
+
+  .action {
+    width: 18%;
+    float: right;
+    text-align: right;
+
+    @media (max-width: 880px) {
+      width: 30%;
+    }
+    .btn {
+      &.green {
         margin-top: 15px;
       }
     }

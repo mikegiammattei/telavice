@@ -7,6 +7,106 @@
   font-size: 18px;
 }
 
+/* Grid */
+.container {
+  width: 1461px;
+  max-width: 100%;
+}
+
+@media (max-width: 992px){
+  .container {
+    width: 1143px;
+    max-width: 100%;
+  }
+}
+@media (max-width: 768px){
+  .container {
+    width: 998px;
+    max-width: 100%;
+  }
+}
+
+
+// Hero
+.heros{
+  &.hero-3{
+
+    .hero{
+      box-shadow: 0 -3px 13px rgba(255,255,255,.6);
+      width:33.3333333333%;
+      float: left;
+      color: #ffffff;
+      border-top: 1px solid rgba(255,255,255,.1);
+
+
+      .inner{
+        position: relative;
+        background: $brand-primary;
+        box-shadow: inset 0px 0px 33px 3px darken($brand-primary, 15%);
+        -webkit-box-shadow: inset 0px 0px 33px 3px darken($brand-primary, 15%);
+        -moz-box-shadow: inset 0px 0px 33px 3px darken($brand-primary, 15%);
+        -o-box-shadow: inset 0px 0px 33px 3px darken($brand-primary, 15%);
+        min-height: 300px;
+        padding: 15px;
+
+        h2,h3,h4{
+          font-size: 28px;
+          text-align: center;
+          margin-top: 20px;
+        }
+
+        .text-box{
+          max-width: 525px;
+          margin: 25px auto;
+
+          p{
+
+          }
+        }
+      }
+      &.on{
+
+        .inner{
+          background: darken($brand-primary, 15%);
+          box-shadow: inset 0px -1px 22px 7px darken($brand-primary, 20%);
+          -webkit-box-shadow: inset 0px -1px 22px 7px darken($brand-primary, 20%);
+          -moz-box-shadow: inset 0px -1px 22px 7px darken($brand-primary, 20%);
+          -o-box-shadow: inset 0px -1px 22px 7px darken($brand-primary, 20%);
+
+          &:after, &:before {
+            bottom: 100%;
+            left: 50%;
+            border: solid transparent ;
+            content: "\f103";
+            font-family: FontAwesome;
+            height: 0;
+            width: 0;
+            position: absolute;
+            pointer-events: none;
+            text-indent: -11px;
+            line-height: 74px;
+            font-size: 32px;
+
+          }
+
+          &:after {
+            border-color: rgba(136, 183, 213, 0);
+            border-bottom-color: #1B2C47;
+            border-width: 50px;
+            margin-left: -50px;
+          }
+          &:before{
+            border-color: rgba(194, 225, 245, 0);
+            border-bottom-color: rgba(255,255,255,0.9);
+            border-width: 51px;
+            margin-left: -51px;
+
+          }
+        }
+      }
+    }
+  }
+}
 // Buttons
 .btn{
 
