@@ -1,3 +1,7 @@
+body{
+  min-height: 2000px;
+  background: #e4e4e4;
+}
 .prime-heading{
   color: #ffffff;
   font-weight: bold;
@@ -30,24 +34,23 @@
 // Hero
 .heros{
   &.hero-3{
-
     .hero{
-      box-shadow: 0 -3px 13px rgba(255,255,255,.6);
       width:33.3333333333%;
       float: left;
       color: #ffffff;
-      border-top: 1px solid rgba(255,255,255,.1);
 
 
       .inner{
         position: relative;
-        background: $brand-primary;
-        box-shadow: inset 0px 0px 33px 3px darken($brand-primary, 15%);
-        -webkit-box-shadow: inset 0px 0px 33px 3px darken($brand-primary, 15%);
-        -moz-box-shadow: inset 0px 0px 33px 3px darken($brand-primary, 15%);
-        -o-box-shadow: inset 0px 0px 33px 3px darken($brand-primary, 15%);
-        min-height: 300px;
-        padding: 15px;
+        background: #25abfd;
+        background: -moz-linear-gradient(top, #25abfd 0%, #0469bd 100%);
+        background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #25abfd), color-stop(100%, #0469bd));
+        background: -webkit-linear-gradient(top, #25abfd 0%, #0469bd 100%);
+        background: -o-linear-gradient(top, #25abfd 0%, #0469bd 100%);
+        background: -ms-linear-gradient(top, #25abfd 0%, #0469bd 100%);
+        background: linear-gradient(to bottom, #25abfd 0%, #0469bd 100%);
+        filter: progid:DXImageTransform.Microsoft.gradient( startColorstr=$top, endColorstr=$bottom, GradientType=0 );
+        padding: 60px 15px;
 
         h2,h3,h4{
           font-size: 28px;
@@ -65,42 +68,38 @@
         }
       }
       &.on{
-
         .inner{
-          background: darken($brand-primary, 15%);
-          box-shadow: inset 0px -1px 22px 7px darken($brand-primary, 20%);
-          -webkit-box-shadow: inset 0px -1px 22px 7px darken($brand-primary, 20%);
-          -moz-box-shadow: inset 0px -1px 22px 7px darken($brand-primary, 20%);
-          -o-box-shadow: inset 0px -1px 22px 7px darken($brand-primary, 20%);
+          padding-bottom: 39px;
+          padding-top: 0px;
+          border-radius: 0 0 40px 40px;
+          position: relative;
+          z-index:110;
+          background: $brand-primary;
+          background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, $brand-primary), color-stop(100%, $brand-accent));
+          background: -webkit-linear-gradient(top, $brand-primary 0%, $brand-accent 100%);
+          background: -o-linear-gradient(top, $brand-primary 0%, $brand-accent 100%);
+          background: -ms-linear-gradient(top, $brand-primary 0%, $brand-accent 100%);
+          background: linear-gradient(to bottom, $brand-primary 0%, $brand-accent 100%);
+          filter: progid:DXImageTransform.Microsoft.gradient( startColorstr=$top, endColorstr=$bottom, GradientType=0 );
 
-          &:after, &:before {
-            bottom: 100%;
-            left: 50%;
-            border: solid transparent ;
-            content: "\f103";
-            font-family: FontAwesome;
-            height: 0;
-            width: 0;
-            position: absolute;
-            pointer-events: none;
-            text-indent: -11px;
-            line-height: 74px;
-            font-size: 32px;
+          ul{
+            padding: 0;
+            text-align: center;
+            li{
 
-          }
+              list-style: none;
 
-          &:after {
-            border-color: rgba(136, 183, 213, 0);
-            border-bottom-color: #1B2C47;
-            border-width: 50px;
-            margin-left: -50px;
-          }
-          &:before{
-            border-color: rgba(194, 225, 245, 0);
-            border-bottom-color: rgba(255,255,255,0.9);
-            border-width: 51px;
-            margin-left: -51px;
-
+              &:before {
+                content: '\f00c';
+                font-family: FontAwesome;
+                font-size: 24px;
+                position: relative;
+                top: 3px;
+                display: inline-block;
+                margin-right: 7px;
+                color: $text-green;
+              }
+            }
           }
         }
       }
@@ -110,7 +109,7 @@
 // Buttons
 .btn{
 
-  &.btn-go{
+  &.btn-go {
     background: $brand-green;
     background: -moz-linear-gradient(top, $brand-green 0%, #2e9937 100%);
     background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, $brand-green), color-stop(100%, #2e9937));
@@ -118,24 +117,38 @@
     background: -o-linear-gradient(top, $brand-green 0%, #2e9937 100%);
     background: -ms-linear-gradient(top, $brand-green 0%, #2e9937 100%);
     background: linear-gradient(to bottom, $brand-green 0%, #2e9937 100%);
-    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr=$top, endColorstr=$bottom, GradientType=0 );
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=$top, endColorstr=$bottom, GradientType=0);
     border: 0;
     border-radius: 3px;
     color: #fff;
     margin: 0 auto;
     max-width: 100%;
-    padding: 9px;
+    padding: 20px 65px;
     text-decoration: none;
-    width: 235px;
     display: block;
     font-size: 1.5em;
     line-height: 1.5em;
+    cursor: pointer;
+    @include transition(all .4s ease);
+
+    &:hover {
+      color: #fff;
+      background: darken($brand-green, 10%);
+      background: -moz-linear-gradient(top, darken($brand-green, 10%) 0%, #2e9937 100%);
+      background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, $brand-green), color-stop(100%, #2e9937));
+      background: -webkit-linear-gradient(top, darken($brand-green, 10%) 0%, #2e9937 100%);
+      background: -o-linear-gradient(top, darken($brand-green, 10%) 0%, #2e9937 100%);
+      background: -ms-linear-gradient(top, darken($brand-green, 10%) 0%, #2e9937 100%);
+      background: linear-gradient(to bottom, darken($brand-green, 10%) 0%, #2e9937 100%);
+      filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=$top, endColorstr=$bottom, GradientType=0);
+    }
   }
 
   &.btn-outline-secondary{
     &.green {
       border-color: $brand-green;
       color: #ffffff;
+      cursor: pointer;
 
       &:hover{
         color: #fff;
