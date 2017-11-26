@@ -36,6 +36,21 @@ function featureSection() {
         $('#home .img-box').removeAttr();
     }
 
-
-
 }
+
+$(window).on('scroll', function() {
+    var scrollTop = $(this).scrollTop();
+
+    if(scrollTop > 100){
+        $('header').addClass('pre');
+        setTimeout(function () {
+            $('header').addClass('on');
+        },200)
+    }else if(scrollTop === 0){
+        $('header').removeClass('pre');
+        setTimeout(function () {
+            $('header').removeClass('on');
+        },200)
+
+    }
+});

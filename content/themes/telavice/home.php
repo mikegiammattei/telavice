@@ -59,6 +59,45 @@
             </div>
         </div>
     </div>
+    <div class="clearfix"></div>
+    <div id="online-experience" class="container">
+        <div class="row h-100">
+            <div class="col-sm-6  align-self-center">
+                <h3 class="heading">Online Experience <span>Secure and continent</span></h3>
+                <p>This is where the new verbiage will go. Please disregard this verbiage, its sole purpose is to act as a place holder for the official.</p>
+            </div>
+            <div class="col-sm-6">
+                <img src="/content/uploads/2017/11/happy-online-patient.jpg" class="img-responsive">
+            </div>
+        </div>
+    </div>
+    <div id="treated-conditions">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-12">
+                    <h4 class="heading">Popular Treated Conditions</h4>
+                    <div class="box-container">
+                        <div class="box">
+                            <h5>Heading Title</h5>
+                            This is where the new verbiage will go.
+                        </div>
+                        <div class="box">
+                            <h5>Heading Title</h5>
+                            This is where the new verbiage will go.
+                        </div>
+                        <div class="box">
+                            <h5>Heading Title</h5>
+                            This is where the new verbiage will go.
+                        </div>
+                        <div class="box">
+                            <h5>Heading Title</h5>
+                            This is where the new verbiage will go.
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
 </div>
 
 <?php get_footer();

@@ -42,14 +42,7 @@ body{
 
       .inner{
         position: relative;
-        background: #25abfd;
-        background: -moz-linear-gradient(top, #25abfd 0%, #0469bd 100%);
-        background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #25abfd), color-stop(100%, #0469bd));
-        background: -webkit-linear-gradient(top, #25abfd 0%, #0469bd 100%);
-        background: -o-linear-gradient(top, #25abfd 0%, #0469bd 100%);
-        background: -ms-linear-gradient(top, #25abfd 0%, #0469bd 100%);
-        background: linear-gradient(to bottom, #25abfd 0%, #0469bd 100%);
-        filter: progid:DXImageTransform.Microsoft.gradient( startColorstr=$top, endColorstr=$bottom, GradientType=0 );
+        @extend .sub-gradient;
         padding: 60px 15px;
 
         h2,h3,h4{
@@ -74,13 +67,7 @@ body{
           border-radius: 0 0 40px 40px;
           position: relative;
           z-index:110;
-          background: $brand-primary;
-          background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, $brand-primary), color-stop(100%, $brand-accent));
-          background: -webkit-linear-gradient(top, $brand-primary 0%, $brand-accent 100%);
-          background: -o-linear-gradient(top, $brand-primary 0%, $brand-accent 100%);
-          background: -ms-linear-gradient(top, $brand-primary 0%, $brand-accent 100%);
-          background: linear-gradient(to bottom, $brand-primary 0%, $brand-accent 100%);
-          filter: progid:DXImageTransform.Microsoft.gradient( startColorstr=$top, endColorstr=$bottom, GradientType=0 );
+          @extend .main-gradient;
 
           ul{
             padding: 0;

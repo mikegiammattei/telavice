@@ -1,8 +1,30 @@
-header{
+header {
   clear: both;
   overflow: auto;
+  position: absolute;
+  transform: translate(0px, 0px);
+  width: 100%;
+  z-index: 200;
+  height: 65px;
+  top: 0px;
+  @include transition(all .4s ease);
 
-  .group{
+  &.pre{
+    position:absolute;
+    transform: translate(0px, -50px);
+    z-index: 200;
+  }
+
+
+  &.on{
+    position: fixed;
+    background-color: transparentize($brand-primary,.1);
+    height: 65px;
+    transform: translate(0px, 0px);
+    top:0;
+    box-shadow: 0 3px 8px rgba(0,0,0,.2);
+  }
+  .group {
     width: 82%;
     float: left;
     @media (max-width: 880px) {
@@ -10,25 +32,19 @@ header{
     }
     .logo {
       float: left;
-      font-weight: bolder;
-      font-size: 32px;
-      color: #ffffff;
       cursor: pointer;
 
-      .icon {
-        left: 4px;
-        top: -1px;
-        padding: 0px 7px;
-        background: #3FB038;
-        border-radius: 4px;
-
+      img{
+        width: 150px;
+        margin-top: 4px;
       }
+
       .heading {
         padding: 6px 0;
         display: inline-block;
       }
     }
-    .navigation{
+    .navigation {
       float: left;
     }
   }
