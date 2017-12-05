@@ -147,7 +147,6 @@
     @extend .black-gradient;
     padding-top: 50px;
     padding-bottom: 100px;
-    margin-bottom: 100px;
     border: 1px inset #505050;
 
     .heading{
@@ -177,5 +176,82 @@
         }
       }
     }
+  }
+  #question{
+    margin-bottom: 100px;
+    .header{
+      @extend .main-gradient;
+      color: #ffffff;
+      text-align:center;
+      font-size: 1.7em;
+      padding: 15px 5px;
+      margin-bottom: 50px
+    }
+    .card{
+      background-color: transparent;
+      border: none;
+
+      .card-header{
+        padding-left: 0;
+        background-color: transparent;
+      }
+      .faqs{
+          dt {
+            cursor: pointer;
+            padding:17px;
+            margin: 0;
+
+            &.collapsed {
+              &:before {
+                -webkit-transform: rotate(0deg);
+                -moz-transform: rotate(0deg);
+                -ms-transform: rotate(0deg);
+                -o-transform: rotate(0deg);
+                transform: rotate(0deg);
+                background: $brand-primary;
+                content: '\f067';
+                padding: 5px 6px 6px 10px;
+                color: #ffffff;
+                font-family: FontAwesome;
+                width: 33px;
+                height: 33px;
+                display: inline-block;
+                margin-right: 10px;
+                float: left;
+                border-radius: 50%;
+                position: relative;
+                top: -4px;
+              }
+            }
+            &:before {
+              @include transition(all .5s ease);
+              content: '\f068';
+              padding: 5px 6px 6px 10px;
+              -webkit-transform: rotate(540deg);
+              -moz-transform: rotate(540deg);
+              -ms-transform: rotate(540deg);
+              -o-transform: rotate(540deg);
+              transform: rotate(540deg);
+              background: $brand-gray;
+              color: #ffffff;
+              font-family: FontAwesome;
+              width: 33px;
+              height: 33px;
+              display: inline-block;
+              margin-right: 10px;
+              float: left;
+              border-radius: 50%;
+              position: relative;
+              top: -4px;
+
+            }
+          }
+          dd{
+            margin-left: 63px;
+          }
+        }
+
+    }
+
   }
 }

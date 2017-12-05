@@ -129,6 +129,10 @@ body{
       background: linear-gradient(to bottom, darken($brand-green, 10%) 0%, #2e9937 100%);
       filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=$top, endColorstr=$bottom, GradientType=0);
     }
+
+    &.md{
+      padding: 9px 40px;
+    }
   }
 
   &.btn-outline-secondary{
