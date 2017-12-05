@@ -73,47 +73,44 @@
         </div>
     </section>
     <section id="treated-conditions">
-        <div class="container">
-            <div class="row">
-                <div class="col-sm-12">
-                    <h4 class="heading">Popular Treated Conditions</h4>
-                    <div class="box-container">
-                        <div class="box">
-                            <h5>Heading Title</h5>
-                            This is where the new verbiage will go.
-                        </div>
-                        <div class="box">
-                            <h5>Heading Title</h5>
-                            This is where the new verbiage will go.
-                        </div>
-                        <div class="box">
-                            <h5>Heading Title</h5>
-                            This is where the new verbiage will go.
-                        </div>
-                        <div class="box">
-                            <h5>Heading Title</h5>
-                            This is where the new verbiage will go.
-                        </div>
-                        <div class="box">
-                            <h5>Heading Title</h5>
-                            This is where the new verbiage will go.
-                        </div>
-                        <div class="box">
-                            <h5>Heading Title</h5>
-                            This is where the new verbiage will go.
-                        </div>
-                        <div class="box">
-                            <h5>Heading Title</h5>
-                            This is where the new verbiage will go.
-                        </div>
-                        <div class="box">
-                            <h5>Heading Title</h5>
-                            This is where the new verbiage will go.
-                        </div>
-                    </div>
-                </div>
+        <div class="header">
+            <h4 class="heading">Popular Treated Conditions</h4>
+        </div>
+        <div class="box-container">
+            <div class="box">
+                <h5>Heading Title</h5>
+                This is where the new verbiage will go.
+            </div>
+            <div class="box">
+                <h5>Heading Title</h5>
+                This is where the new verbiage will go.
+            </div>
+            <div class="box">
+                <h5>Heading Title</h5>
+                This is where the new verbiage will go.
+            </div>
+            <div class="box">
+                <h5>Heading Title</h5>
+                This is where the new verbiage will go.
+            </div>
+            <div class="box">
+                <h5>Heading Title</h5>
+                This is where the new verbiage will go.
+            </div>
+            <div class="box">
+                <h5>Heading Title</h5>
+                This is where the new verbiage will go.
+            </div>
+            <div class="box">
+                <h5>Heading Title</h5>
+                This is where the new verbiage will go.
+            </div>
+            <div class="box">
+                <h5>Heading Title</h5>
+                This is where the new verbiage will go.
             </div>
         </div>
+
     </section>
     <section id="question">
         <div class="header">
@@ -122,6 +119,96 @@
         <div class="container">
             <div class="row">
                 <div class="col-sm-6">
+                    <div class="card">
+                        <h4 class="card-header">Ready to Start</h4>
+                        <div class="faqs" itemscope itemtype="http://schema.org/Question">
+                            <div class="card-body">
+                                <dt href="#home-faq-1"  data-toggle="collapse" class="card-title collapsed" itemprop="name">How much does it cost to use Telavice?</dt>
+                                <dd class="collapse card-text"  id="home-faq-1" itemprop="text">
+                                    <span itemprop="text">I am having difficulty understanding Ruby attr_accessors, can someone explain them?</span>
+                                    <div class="ask-date">asked <time itemprop="dateCreated" datetime="2010-11-04T20:07Z">Nov 11 '10 at 20:07</time></div>
+                                    <div class="author" itemprop="author" itemscope itemtype="http://schema.org/Person"><span itemprop="name">someuser</span></div>
+                                    <div class="suggested-answer" itemprop="suggestedAnswer" itemscope itemtype="http://schema.org/Answer">
+                                        <div class="answered-date">answered <time itemprop="dateCreated" datetime="2010-12-06T21:11Z">Dec 6 '10 at 21:11</time></div>
+                                        <div itemprop="author" itemscope itemtype="http://schema.org/Person"><span itemprop="name">lonelyuser1234</span></div>
+                                    </div>
+                                </dd>
+                            </div>
+                        </div>
+                        <div class="faqs" itemscope itemtype="http://schema.org/Question">
+                            <div class="card-body">
+                                <dt href="#home-faq-3"  data-toggle="collapse" class="card-title collapsed" itemprop="name">How much does it cost to use Telavice?</dt>
+                                <dd class="collapse card-text"  id="home-faq-3" itemprop="text">
+                                    <span itemprop="text">I am having difficulty understanding Ruby attr_accessors, can someone explain them?</span>
+                                    <div class="ask-date">asked <time itemprop="dateCreated" datetime="2010-11-04T20:07Z">Nov 11 '10 at 20:07</time></div>
+                                    <div class="author" itemprop="author" itemscope itemtype="http://schema.org/Person"><span itemprop="name">someuser</span></div>
+                                    <div class="suggested-answer" itemprop="suggestedAnswer" itemscope itemtype="http://schema.org/Answer">
+                                        <div class="answered-date">answered <time itemprop="dateCreated" datetime="2010-12-06T21:11Z">Dec 6 '10 at 21:11</time></div>
+                                        <div itemprop="author" itemscope itemtype="http://schema.org/Person"><span itemprop="name">lonelyuser1234</span></div>
+                                    </div>
+                                </dd>
+                            </div>
+                        </div>
+                        <div class="faqs" itemscope itemtype="http://schema.org/Question">
+                            <div class="card-body">
+                                <dt href="#home-faq-4"  data-toggle="collapse" class="card-title collapsed" itemprop="name">How much does it cost to use Telavice?</dt>
+                                <dd class="collapse card-text"  id="home-faq-4" itemprop="text">
+                                    <span itemprop="text">I am having difficulty understanding Ruby attr_accessors, can someone explain them?</span>
+                                    <div class="ask-date">asked <time itemprop="dateCreated" datetime="2010-11-04T20:07Z">Nov 11 '10 at 20:07</time></div>
+                                    <div class="author" itemprop="author" itemscope itemtype="http://schema.org/Person"><span itemprop="name">someuser</span></div>
+                                    <div class="suggested-answer" itemprop="suggestedAnswer" itemscope itemtype="http://schema.org/Answer">
+                                        <div class="answered-date">answered <time itemprop="dateCreated" datetime="2010-12-06T21:11Z">Dec 6 '10 at 21:11</time></div>
+                                        <div itemprop="author" itemscope itemtype="http://schema.org/Person"><span itemprop="name">lonelyuser1234</span></div>
+                                    </div>
+                                </dd>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <h4 class="card-header">What we offer</h4>
+                        <div class="faqs" itemscope itemtype="http://schema.org/Question">
+                            <div class="card-body">
+                                <dt href="#home-faq-1"  data-toggle="collapse" class="card-title collapsed" itemprop="name">How much does it cost to use Telavice?</dt>
+                                <dd class="collapse card-text"  id="home-faq-1" itemprop="text">
+                                    <span itemprop="text">I am having difficulty understanding Ruby attr_accessors, can someone explain them?</span>
+                                    <div class="ask-date">asked <time itemprop="dateCreated" datetime="2010-11-04T20:07Z">Nov 11 '10 at 20:07</time></div>
+                                    <div class="author" itemprop="author" itemscope itemtype="http://schema.org/Person"><span itemprop="name">someuser</span></div>
+                                    <div class="suggested-answer" itemprop="suggestedAnswer" itemscope itemtype="http://schema.org/Answer">
+                                        <div class="answered-date">answered <time itemprop="dateCreated" datetime="2010-12-06T21:11Z">Dec 6 '10 at 21:11</time></div>
+                                        <div itemprop="author" itemscope itemtype="http://schema.org/Person"><span itemprop="name">lonelyuser1234</span></div>
+                                    </div>
+                                </dd>
+                            </div>
+                        </div>
+                        <div class="faqs" itemscope itemtype="http://schema.org/Question">
+                            <div class="card-body">
+                                <dt href="#home-faq-3"  data-toggle="collapse" class="card-title collapsed" itemprop="name">How much does it cost to use Telavice?</dt>
+                                <dd class="collapse card-text"  id="home-faq-3" itemprop="text">
+                                    <span itemprop="text">I am having difficulty understanding Ruby attr_accessors, can someone explain them?</span>
+                                    <div class="ask-date">asked <time itemprop="dateCreated" datetime="2010-11-04T20:07Z">Nov 11 '10 at 20:07</time></div>
+                                    <div class="author" itemprop="author" itemscope itemtype="http://schema.org/Person"><span itemprop="name">someuser</span></div>
+                                    <div class="suggested-answer" itemprop="suggestedAnswer" itemscope itemtype="http://schema.org/Answer">
+                                        <div class="answered-date">answered <time itemprop="dateCreated" datetime="2010-12-06T21:11Z">Dec 6 '10 at 21:11</time></div>
+                                        <div itemprop="author" itemscope itemtype="http://schema.org/Person"><span itemprop="name">lonelyuser1234</span></div>
+                                    </div>
+                                </dd>
+                            </div>
+                        </div>
+                        <div class="faqs" itemscope itemtype="http://schema.org/Question">
+                            <div class="card-body">
+                                <dt href="#home-faq-4"  data-toggle="collapse" class="card-title collapsed" itemprop="name">How much does it cost to use Telavice?</dt>
+                                <dd class="collapse card-text"  id="home-faq-4" itemprop="text">
+                                    <span itemprop="text">I am having difficulty understanding Ruby attr_accessors, can someone explain them?</span>
+                                    <div class="ask-date">asked <time itemprop="dateCreated" datetime="2010-11-04T20:07Z">Nov 11 '10 at 20:07</time></div>
+                                    <div class="author" itemprop="author" itemscope itemtype="http://schema.org/Person"><span itemprop="name">someuser</span></div>
+                                    <div class="suggested-answer" itemprop="suggestedAnswer" itemscope itemtype="http://schema.org/Answer">
+                                        <div class="answered-date">answered <time itemprop="dateCreated" datetime="2010-12-06T21:11Z">Dec 6 '10 at 21:11</time></div>
+                                        <div itemprop="author" itemscope itemtype="http://schema.org/Person"><span itemprop="name">lonelyuser1234</span></div>
+                                    </div>
+                                </dd>
+                            </div>
+                        </div>
+                    </div>
                     <div class="card">
                         <h4 class="card-header">Ready to Start</h4>
                         <div class="faqs" itemscope itemtype="http://schema.org/Question">
@@ -185,7 +272,7 @@
                 <div class="col-sm-6">
                     <div class="card card-outline-secondary">
 
-                        <h4 class="card-header text-center">Sign Up</h4>
+                        <h4 class="card-header text-center">How we help</h4>
 
                         <div class="card-block">
                             <form class="form" role="form" autocomplete="off">
