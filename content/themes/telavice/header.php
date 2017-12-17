@@ -26,8 +26,7 @@
     <div class="container">
         <div class="group">
             <div class="logo">
-                <img src="/images/logo.png">
-               <!-- <span class="heading"><i class="fa fa-plus-square" aria-hidden="true"></i> Telavice</span>-->
+                <img src="/images/telavice-logo.png">
             </div>
             <div class="navigation">
 		        <?php /** Pull's in the navigation */ ?>
