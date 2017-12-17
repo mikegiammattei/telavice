@@ -68,7 +68,7 @@
                 <button class="btn btn-go md pull-left">Sign Up</button>
             </div>
             <div class="col-sm-6">
-                <img src="/content/uploads/2017/11/happy-online-patient.jpg" class="img-responsive">
+                <img src="/content/uploads/2017/12/happy-online-patient.jpg" class="img-responsive">
             </div>
         </div>
     </section>
@@ -270,30 +270,26 @@
                     </div>
                 </div>
                 <div class="col-sm-6">
-                    <div class="card card-outline-secondary">
+                    <div class="card card-outline-secondary faq-form-card">
 
                         <h4 class="card-header text-center">How we help</h4>
 
                         <div class="card-block">
                             <form class="form" role="form" autocomplete="off">
                                 <div class="form-group">
-                                    <label for="inputName">Name</label>
-                                    <input type="text" class="form-control" id="inputName" placeholder="Full name">
+                                    <label for="name">Name</label>
+                                    <input type="text" name="name" class="form-control" id="name" placeholder="Full name">
                                 </div>
                                 <div class="form-group">
-                                    <label for="inputEmail3">Email</label>
-                                    <input type="email" class="form-control" id="inputEmail3" placeholder="Email" required="">
+                                    <label for="email">Email</label>
+                                    <input type="email" class="form-control" id="email" name="email" placeholder="Email" required="">
                                 </div>
                                 <div class="form-group">
-                                    <label for="inputPassword3">Password</label>
-                                    <input type="password" class="form-control" id="inputPassword3" placeholder="Password" required="">
+                                    <label for="question">Question</label>
+                                    <textarea class="form-control" id="question" placeholder="Enter your question"></textarea>
                                 </div>
                                 <div class="form-group">
-                                    <label for="inputVerify3">Verify</label>
-                                    <input type="password" class="form-control" id="inputVerify3" placeholder="Password (again)" required="">
-                                </div>
-                                <div class="form-group">
-                                    <button type="submit" class="btn btn-success btn-lg float-right">Register</button>
+                                    <input type="submit" class="btn btn-success btn-lg" value="Submit Question"
                                 </div>
                             </form>
                         </div>

@@ -4,6 +4,8 @@ $brand-primary : #009FDE;
 $brand-accent : #2092d9;
 $brand-green: #4ecf32;
 $brand-gray : #484848;
+$brand-lite-gray : #e7e7e7 ;
+$brand-secondary : #425563;
 
 /* Typography Colors */
 $text-color : #272727;
@@ -13,6 +15,16 @@ $text-green :  #70f353;
 $dark-header : #585858;
 
 /** Gradients */
+.gray-gradient{
+  background: $brand-lite-gray;
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, $brand-lite-gray), color-stop(100%, $brand-accent));
+  background: -webkit-linear-gradient(top, $brand-lite-gray 0%, $brand-accent 100%);
+  background: -o-linear-gradient(top, $brand-lite-gray 0%, $brand-accent 100%);
+  background: -ms-linear-gradient(top, $brand-lite-gray 0%, $brand-accent 100%);
+  background: linear-gradient(to bottom, $brand-lite-gray 0%, $brand-accent 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr=$top, endColorstr=$bottom, GradientType=0 );
+}
+
 .main-gradient{
   background: $brand-primary;
   background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, $brand-primary), color-stop(100%, $brand-accent));
